@@ -100,12 +100,12 @@ services:
     image: otel/opentelemetry-collector:latest
     container_name: otel-collector
     ports:
-      - "1888:1888"   # pprof extension
-      - "8888:8888"   # Prometheus metrics exposed by the collector
-      - "8889:8889"   # Prometheus exporter metrics
-      - "13133:13133" # health_check extension
-      - "4317:4317"   # OTLP gRPC receiver
-      - "55679:55679" # zpages extension
+      - "1888:1888"
+      - "8888:8888"
+      - "13133:13133"
+      - "4317:4317"
+      - "8889:8889"
+      - "55679:55679"
     volumes:
       - ./collector-config.yaml:/etc/otelcol/config.yaml
     command: ["--config=/etc/otelcol/config.yaml"]
