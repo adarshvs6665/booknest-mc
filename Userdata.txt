@@ -11,6 +11,8 @@ sudo yum install -y libxcrypt-compat
 # Clone the repository
 git clone https://github.com/adarshvs6665/booknest-mc ~/booknest-mc
 
+sudo chmod -R 777 ~/booknest-mc
+
 # Install Docker
 sudo yum install -y docker
 

@@ -22,10 +22,7 @@
   "links": [],
   "panels": [
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fe5izqoyxzy0wb"
-      },
+      "datasource": "prometheus",
       "description": "Total 200, 400 and 500 requests",
       "fieldConfig": {
         "defaults": {
@@ -111,10 +108,7 @@
           "refId": "A"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fe5izqoyxzy0wb"
-          },
+          "datasource": "prometheus",
           "editorMode": "code",
           "expr": "http_response_codes_total{status_code=~\"4..\"}",
           "hide": false,
@@ -124,10 +118,7 @@
           "refId": "B"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fe5izqoyxzy0wb"
-          },
+          "datasource": "prometheus",
           "editorMode": "code",
           "expr": "http_response_codes_total{status_code=~\"5..\"}",
           "hide": false,
@@ -141,10 +132,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fe5izqoyxzy0wb"
-      },
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -233,10 +221,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fe5izqoyxzy0wb"
-      },
+      "datasource": "prometheus",
       "description": "Total number of logged in users",
       "fieldConfig": {
         "defaults": {
@@ -298,10 +283,7 @@
       "type": "stat"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fe5izqoyxzy0wb"
-      },
+      "datasource": "prometheus",
       "description": "Lists the count of requests from all endpoints in all services",
       "fieldConfig": {
         "defaults": {
@@ -380,10 +362,7 @@
       "pluginVersion": "11.3.1",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fe5izqoyxzy0wb"
-          },
+          "datasource": "prometheus",
           "editorMode": "code",
           "expr": "sum(http_requests_total) by (job, route)\n",
           "legendFormat": "__auto",
@@ -395,10 +374,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fe5izqoyxzy0wb"
-      },
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -487,10 +463,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fe5izqoyxzy0wb"
-      },
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -579,10 +552,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fe5izqoyxzy0wb"
-      },
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {

@@ -22,10 +22,7 @@
     "links": [],
     "panels": [
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "description": "Tracks the number of bytes currently allocated in the heap",
         "fieldConfig": {
           "defaults": {
@@ -115,10 +112,7 @@
         "type": "timeseries"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -207,10 +201,7 @@
         "type": "timeseries"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "description": "Current number of active goroutines",
         "fieldConfig": {
           "defaults": {
@@ -272,10 +263,7 @@
         "type": "stat"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "description": "Heap size (in bytes) at which the next garbage collection will trigge",
         "fieldConfig": {
           "defaults": {
@@ -335,10 +323,7 @@
         "type": "gauge"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "description": "Total number of garbage collection cycles since application started",
         "fieldConfig": {
           "defaults": {
@@ -428,10 +413,7 @@
         "type": "timeseries"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -492,10 +474,7 @@
         "type": "stat"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "description": "Displays the CPU usage of the Node.js process",
         "fieldConfig": {
           "defaults": {
@@ -589,10 +568,7 @@
         "type": "timeseries"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "description": "Visualize the duration of garbage collection cycles in seconds across different quantiles (e.g., 50th, 75th percentile). Helps monitor the impact of garbage collection on application performance.",
         "fieldConfig": {
           "defaults": {
@@ -682,10 +658,7 @@
         "type": "timeseries"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -774,10 +747,7 @@
         "type": "timeseries"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -866,10 +836,7 @@
         "type": "timeseries"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "description": "Response times of API endpoints",
         "fieldConfig": {
           "defaults": {
@@ -927,10 +894,7 @@
         "type": "piechart"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "description": "Displays the current number of open file descriptors by the Node.js process",
         "fieldConfig": {
           "defaults": {
@@ -990,10 +954,7 @@
         "type": "gauge"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -1082,10 +1043,7 @@
         "type": "timeseries"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "fieldConfig": {
           "defaults": {
             "color": {
