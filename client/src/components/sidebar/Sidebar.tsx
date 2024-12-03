@@ -19,6 +19,7 @@ import { useAtom } from "jotai";
 import { storage, userAtom } from "../../store";
 import { useNavigate } from "react-router-dom";
 import { SESSION_STORAGE_USER_KEY } from "../../constants";
+import { useSignoutMutation } from "../../api";
 
 const drawerWidth = 240;
 
@@ -44,11 +45,21 @@ export const Sidebar = ({
 }) => {
   const [user, setUser] = useAtom(userAtom);
   const navigate = useNavigate();
+  const signOutMutation = useSignoutMutation();
 
   const handleLogOut = () => {
-    setUser(null);
-    storage.removeItem(SESSION_STORAGE_USER_KEY);
-    navigate("/sign-in");
+    if (!signOutMutation.isLoading) {
+      signOutMutation.mutate(null, {
+        onSuccess: () => {
+          setUser(null);
+          storage.removeItem(SESSION_STORAGE_USER_KEY);
+          navigate("/sign-in");
+        },
+        onError: (error) => {
+          console.error("Logout failed:", error);
+        },
+      });
+    }
   };
 
   return (

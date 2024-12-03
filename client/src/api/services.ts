@@ -30,7 +30,16 @@ export const useSignInMutation = () => {
 
   return mutation;
 };
+export const useSignoutMutation = () => {
+  const mutation = useMutation<any, any, any, any>(async (): Promise<any> => {
+    const path = config.api.auth.signOut;
 
+    const response = await client.post(path);
+    return response.data;
+  });
+
+  return mutation;
+};
 export const useSignUpMutation = () => {
   const mutation = useMutation<
     unknown,
@@ -83,7 +92,7 @@ export const useFetchBorrowInfoQuery = (
   queryOptions?: QueryOptions<string>
 ) => {
   const fetchBorrowInfo = async (): Promise<BorrowInfo[]> => {
-    const path = config.api.books.fetchBorrowInfo;
+    const path = config.api.borrow.fetchBorrowInfo;
 
     const response = await client.get<
       ApiResponse<{ borrowInfo: BorrowInfo[] }>
@@ -100,7 +109,7 @@ export const useFetchBorrowInfoQuery = (
 
 export const useFetchHistoryQuery = (queryOptions?: QueryOptions<string>) => {
   const fetchBorrowHistory = async (): Promise<BorrowInfo[]> => {
-    const path = config.api.books.fetchBorrowHistory;
+    const path = config.api.borrow.fetchBorrowHistory;
 
     const response = await client.get<
       ApiResponse<{ borrowHistory: BorrowInfo[] }>
@@ -123,7 +132,7 @@ export const useSendBorrowRequestMutation = () => {
     unknown
   >(async (data: { bookId: string }): Promise<any> => {
     const { bookId } = data;
-    const path = config.api.books.sendBorrowRequest.replace(":bookId", bookId);
+    const path = config.api.borrow.sendBorrowRequest.replace(":bookId", bookId);
 
     const response = await client.post(path);
     return response.data;
@@ -188,7 +197,7 @@ export const useFetchBorrowRequestCodesQuery = (
   queryOptions?: QueryOptions<string>
 ) => {
   const fetchBorrowRequestCodes = async (): Promise<string[]> => {
-    const path = config.api.books.fetchBorrowRequestCodes;
+    const path = config.api.borrow.fetchBorrowRequestCodes;
 
     const response = await client.get<ApiResponse<{ codes: string[] }>>(path);
 
@@ -205,7 +214,7 @@ export const useFetchBorrowedBookCodesQuery = (
   queryOptions?: QueryOptions<string>
 ) => {
   const fetchBorrowedBookCodes = async (): Promise<string[]> => {
-    const path = config.api.books.fetchBorrowedBookCodes;
+    const path = config.api.borrow.fetchBorrowedBookCodes;
 
     const response = await client.get<ApiResponse<{ codes: string[] }>>(path);
 
@@ -225,7 +234,7 @@ export const useIssueBookMutation = () => {
     string,
     unknown
   >(async (borrowingId: string): Promise<any> => {
-    const path = config.api.books.issueBook.replace(
+    const path = config.api.borrow.issueBook.replace(
       ":borrowingId",
       borrowingId
     );
@@ -244,7 +253,7 @@ export const useReturnBookMutation = () => {
     string,
     unknown
   >(async (borrowingId: string): Promise<any> => {
-    const path = config.api.books.returnBook.replace(
+    const path = config.api.borrow.returnBook.replace(
       ":borrowingId",
       borrowingId
     );
