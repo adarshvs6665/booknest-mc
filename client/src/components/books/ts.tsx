@@ -1,8 +1,8 @@
-import React from 'react'
+// import React from 'react'
 
-type Props = {}
+// type Props = {}
 
-const ts = (props: Props) => {
+const ts = () => {
   return (
     <div>ts</div>
   )
