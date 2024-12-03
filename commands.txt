@@ -12,3 +12,15 @@ open ports
     9273 - telegraf
     9090 - prometheus
     16686 - jaeger
+
+
+
+
+spin up containers (when run the first time it'll automatically build the container images)
+    - docker-compose up -d
+build container image 
+    - docker-compose build 
+stop containers 
+    - docker-container stop
+delete containers
+    - docker-compose down 
