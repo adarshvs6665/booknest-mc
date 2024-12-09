@@ -66,6 +66,7 @@ services:
 
   prometheus:
     image: prom/prometheus
+    user: root
     container_name: prometheus
     ports:
       - "9090:9090"
