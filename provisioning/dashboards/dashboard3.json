@@ -22,10 +22,7 @@
     "links": [],
     "panels": [
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "description": "Networkl Traffic by Telegraf, Prometheus and Grafana",
         "fieldConfig": {
           "defaults": {
@@ -111,10 +108,7 @@
             "refId": "A"
           },
           {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "fe5izqoyxzy0wb"
-            },
+            "datasource": "prometheus",
             "editorMode": "code",
             "expr": "rate(process_network_receive_bytes_total{job=\"prometheus\"}[1m])",
             "hide": false,
@@ -124,10 +118,7 @@
             "refId": "B"
           },
           {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "fe5izqoyxzy0wb"
-            },
+            "datasource": "prometheus",
             "editorMode": "code",
             "expr": "rate(process_network_receive_bytes_total{job=\"grafana\"}[1m])",
             "hide": false,
@@ -141,10 +132,7 @@
         "type": "timeseries"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "description": "Memory usage by Grafana , Telegraf and Prometheus",
         "fieldConfig": {
           "defaults": {
@@ -230,10 +218,7 @@
             "refId": "A"
           },
           {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "fe5izqoyxzy0wb"
-            },
+            "datasource": "prometheus",
             "editorMode": "code",
             "expr": "process_virtual_memory_bytes{job=\"prometheus\"}\n",
             "hide": false,
@@ -243,10 +228,7 @@
             "refId": "B"
           },
           {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "fe5izqoyxzy0wb"
-            },
+            "datasource": "prometheus",
             "editorMode": "code",
             "expr": "\nprocess_virtual_memory_bytes{job=\"grafana\"}",
             "hide": false,
@@ -260,10 +242,7 @@
         "type": "timeseries"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "description": "Cpu usage comparison of grafanaG Telegraf and Prometheus",
         "fieldConfig": {
           "defaults": {
@@ -342,10 +321,7 @@
         "pluginVersion": "11.3.1",
         "targets": [
           {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "fe5izqoyxzy0wb"
-            },
+            "datasource": "prometheus",
             "editorMode": "code",
             "expr": "rate(process_cpu_seconds_total{job=\"job-name\"}[$__rate_interval])",
             "legendFormat": "__auto",
@@ -353,10 +329,7 @@
             "refId": "A"
           },
           {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "fe5izqoyxzy0wb"
-            },
+            "datasource": "prometheus",
             "editorMode": "code",
             "expr": "rate(process_cpu_seconds_total{job=\"prometheus\"}[$__rate_interval])",
             "hide": false,
@@ -366,10 +339,7 @@
             "refId": "B"
           },
           {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "fe5izqoyxzy0wb"
-            },
+            "datasource": "prometheus",
             "editorMode": "code",
             "expr": "rate(process_cpu_seconds_total{job=\"grafana\"}[$__rate_interval])",
             "hide": false,
@@ -383,10 +353,7 @@
         "type": "timeseries"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "description": "Time taken by prometheus to execute queries",
         "fieldConfig": {
           "defaults": {
@@ -476,10 +443,7 @@
         "type": "timeseries"
       },
       {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fe5izqoyxzy0wb"
-        },
+        "datasource": "prometheus",
         "description": "Average request duration of grafana",
         "fieldConfig": {
           "defaults": {
