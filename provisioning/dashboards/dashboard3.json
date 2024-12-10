@@ -18,7 +18,7 @@
     "editable": true,
     "fiscalYearStartMonth": 0,
     "graphTooltip": 0,
-    "id": 4,
+    "id": 3,
     "links": [],
     "panels": [
       {
@@ -98,7 +98,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.1",
+        "pluginVersion": "11.4.0",
         "targets": [
           {
             "editorMode": "code",
@@ -208,7 +208,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.1",
+        "pluginVersion": "11.4.0",
         "targets": [
           {
             "editorMode": "code",
@@ -318,7 +318,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.1",
+        "pluginVersion": "11.4.0",
         "targets": [
           {
             "datasource": "prometheus",
@@ -429,11 +429,11 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.1",
+        "pluginVersion": "11.4.0",
         "targets": [
           {
             "editorMode": "code",
-            "expr": "engine_query_duration_seconds{job=\"job-name\"}\n",
+            "expr": "prometheus_engine_query_duration_seconds\n",
             "legendFormat": "__auto",
             "range": true,
             "refId": "A"
@@ -489,7 +489,7 @@
           "showThresholdMarkers": true,
           "sizing": "auto"
         },
-        "pluginVersion": "11.3.1",
+        "pluginVersion": "11.4.0",
         "targets": [
           {
             "editorMode": "code",
@@ -517,6 +517,6 @@
     "timezone": "browser",
     "title": "Tools Comparison",
     "uid": "fe6i70heb90xsc",
-    "version": 12,
+    "version": 2,
     "weekStart": ""
   }
